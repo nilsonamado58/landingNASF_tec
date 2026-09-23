@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: nasf-tec
+    env: static
+    plan: free
+    staticPublishPath: .
+    buildCommand: ""
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
